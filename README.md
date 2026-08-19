@@ -1,7 +1,7 @@
 # Patrones
 ## Creacionales
 ### Factory
-```
+```java
 public class EnemyFactory {
     public Enemy createEnemy(String type) {
         if(type.equalsIgnoreCase("warrior"))
@@ -13,7 +13,7 @@ public class EnemyFactory {
     }
 }
 ```
-```
+```java
   EnemyFactory enemyFactory = new EnemyFactory();
   Enemy warrior = enemyFactory.createEnemy("warrior");
   Enemy mage = enemyFactory.createEnemy("mage");
