@@ -18,7 +18,30 @@ public class EnemyFactory {
   Enemy warrior = enemyFactory.createEnemy("warrior");
   Enemy mage = enemyFactory.createEnemy("mage");
 ```
-
+### Factory Method
+```java
+ Enemy warrior = new WarriorFactory().createEnemy();
+ Enemy mage = new MageFactory().createEnemy();
+```
+```java
+public abstract class EnemyFactory {
+    public abstract Enemy createEnemy();
+}
+```
+```java
+public class WarriorFactory extends EnemyFactory{
+    @Override
+    public Enemy createEnemy() {
+        return new Warrior();
+    }
+}
+public class MageFactory extends EnemyFactory{
+    @Override
+    public Enemy createEnemy() {
+        return new Mage();
+    }
+}
+```
 
 
   
