@@ -1,7 +1,7 @@
 # Patrones
 ## Creacionales
 ### Factory
-´´`
+```
 public class EnemyFactory {
     public Enemy createEnemy(String type) {
         if(type.equalsIgnoreCase("warrior"))
