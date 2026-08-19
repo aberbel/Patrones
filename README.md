@@ -18,7 +18,7 @@ public class EnemyFactory {
     }
 }
 ```
-Diagrama: ![EnemyFactory](docs/EnemyFactory.svg)
+![Factory](docs/Factory.svg)
 
 ### Factory Method
 ```java
@@ -44,6 +44,7 @@ public class MageFactory extends EnemyFactory{
     }
 }
 ```
+![FactoryMethod](docs/FactoryMethod.svg)
 
 
   

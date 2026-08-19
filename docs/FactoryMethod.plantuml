@@ -1,0 +1,15 @@
+@startuml
+
+title Diagrama de clases
+
+Abstract class EnemyFactory {
+  +Enemy createEnemy(String type)
+}
+class WarriorFactory
+class MageFactory
+
+EnemyFactory <|-- WarriorFactory
+EnemyFactory <|-- MageFactory
+
+
+@enduml

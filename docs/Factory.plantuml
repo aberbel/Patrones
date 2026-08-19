@@ -1,0 +1,9 @@
+@startuml
+
+title Diagrama de clases
+
+class EnemyFactory {
+  +Enemy createEnemy(String type)
+}
+
+@enduml
