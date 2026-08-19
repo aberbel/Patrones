@@ -2,6 +2,11 @@
 ## Creacionales
 ### Factory
 ```java
+  EnemyFactory enemyFactory = new EnemyFactory();
+  Enemy warrior = enemyFactory.createEnemy("warrior");
+  Enemy mage = enemyFactory.createEnemy("mage");
+```
+```java
 public class EnemyFactory {
     public Enemy createEnemy(String type) {
         if(type.equalsIgnoreCase("warrior"))
@@ -12,11 +17,6 @@ public class EnemyFactory {
             return null;
     }
 }
-```
-```java
-  EnemyFactory enemyFactory = new EnemyFactory();
-  Enemy warrior = enemyFactory.createEnemy("warrior");
-  Enemy mage = enemyFactory.createEnemy("mage");
 ```
 ### Factory Method
 ```java
