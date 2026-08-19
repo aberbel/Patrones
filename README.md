@@ -1,4 +1,5 @@
 # Patrones
+Código de https://github.com/cavanosa/tutorial-patrones-java
 ## Creacionales
 ### Factory
 ```java
